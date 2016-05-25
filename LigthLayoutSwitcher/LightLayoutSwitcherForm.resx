@@ -1,0 +1,539 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <metadata name="TrayIcon.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="TrayIcon.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAABAAEAICAAAAEAIACoEAAAFgAAACgAAAAgAAAAQAAAAAEAIAAAAAAAABAAAAAAAAAAAAAAAAAAAAAA
+        AAD/////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        /////////////////////////////////////////////////////////////////////////////+Xl
+        5f/c3Nz/3Nzc/9zc3P/c3Nz/3Nzc/9zc3P/c3Nz/3Nzc/9zc3P/c3Nz/3Nzc/9zc3P/c3Nz/3Nzc/9zc
+        3P/c3Nz/3Nzc/9zc3P/c3Nz/3Nzc/9zc3P/c3Nz/3Nzc/9zc3P/c3Nz/3Nzc//b29v//////////////
+        ////////ubm5/7m5uf+5ubn/ubm5/7m5uf+5ubn/ubm5/7m5uf+5ubn/ubm5/7m5uf+5ubn/ubm5/7m5
+        uf+5ubn/ubm5/7m5uf+5ubn/ubm5/7m5uf+5ubn/ubm5/7m5uf+5ubn/ubm5/7m5uf+5ubn/3Nzc////
+        //////////////////+5ubn/ubm5/7m5uf/t7e3/3Nzc/9zc3P/t7e3/3Nzc/9zc3P/t7e3/3Nzc/9zc
+        3P/c3Nz/3Nzc/9zc3P/c3Nz/3Nzc/9zc3P/t7e3/3Nzc/9zc3P/t7e3/3Nzc/9zc3P/c3Nz/ubm5/7m5
+        uf/c3Nz//////////////////////7m5uf+5ubn/ubm5/9zc3P+5ubn/ubm5/9zc3P+5ubn/ubm5/9zc
+        3P+5ubn/ubm5/7m5uf+5ubn/ubm5/7m5uf+5ubn/ubm5/9zc3P+5ubn/ubm5/9zc3P+5ubn/ubm5/9zc
+        3P+5ubn/ubm5/9zc3P//////////////////////ubm5/7m5uf+5ubn/3Nzc/7m5uf+5ubn/3Nzc/7m5
+        uf+5ubn/3Nzc/7m5uf+5ubn/ubm5/7m5uf+5ubn/ubm5/7m5uf+5ubn/3Nzc/7m5uf+5ubn/3Nzc/7m5
+        uf+5ubn/3Nzc/7m5uf+5ubn/3Nzc//////////////////////+5ubn/ubm5/7m5uf/t7e3/3Nzc/9zc
+        3P/c3Nz/7e3t/9zc3P/c3Nz/7e3t/9zc3P/c3Nz/7e3t/9zc3P/c3Nz/7e3t/9zc3P/c3Nz/7e3t/9zc
+        3P/c3Nz/3Nzc/9zc3P/c3Nz/ubm5/7m5uf/c3Nz//////////////////////7m5uf+5ubn/ubm5/9zc
+        3P+5ubn/ubm5/7m5uf/c3Nz/ubm5/7m5uf/c3Nz/ubm5/7m5uf/c3Nz/ubm5/7m5uf/c3Nz/ubm5/7m5
+        uf/c3Nz/ubm5/7m5uf+5ubn/ubm5/9zc3P+5ubn/ubm5/9zc3P//////////////////////ubm5/7m5
+        uf+5ubn/3Nzc/7m5uf+5ubn/ubm5/9zc3P+5ubn/ubm5/9zc3P+5ubn/ubm5/9zc3P+5ubn/ubm5/9zc
+        3P+5ubn/ubm5/9zc3P+5ubn/ubm5/7m5uf+5ubn/3Nzc/7m5uf+5ubn/3Nzc////////////////////
+        //+5ubn/ubm5/7m5uf/t7e3/3Nzc/9zc3P/c3Nz/3Nzc/+3t7f/c3Nz/3Nzc/+3t7f/c3Nz/3Nzc/+3t
+        7f/c3Nz/3Nzc/+3t7f/c3Nz/3Nzc/+3t7f/c3Nz/3Nzc/9zc3P/c3Nz/ubm5/7m5uf/c3Nz/////////
+        /////////////7m5uf+5ubn/ubm5/9zc3P+5ubn/ubm5/7m5uf+5ubn/3Nzc/7m5uf+5ubn/3Nzc/7m5
+        uf+5ubn/3Nzc/7m5uf+5ubn/3Nzc/7m5uf+5ubn/3Nzc/7m5uf+5ubn/ubm5/9zc3P+5ubn/ubm5/9zc
+        3P//////////////////////ubm5/7m5uf+5ubn/3Nzc/7m5uf+5ubn/ubm5/7m5uf/c3Nz/ubm5/7m5
+        uf/c3Nz/ubm5/7m5uf/c3Nz/ubm5/7m5uf/c3Nz/ubm5/7m5uf/c3Nz/ubm5/7m5uf+5ubn/3Nzc/7m5
+        uf+5ubn/3Nzc//////////////////////+5ubn/ubm5/7m5uf/t7e3/3Nzc/9zc3P/t7e3/3Nzc/9zc
+        3P/t7e3/3Nzc/9zc3P/t7e3/3Nzc/9zc3P/t7e3/3Nzc/9zc3P/t7e3/3Nzc/9zc3P/t7e3/3Nzc/9zc
+        3P/c3Nz/ubm5/7m5uf/c3Nz//////////////////////7m5uf+5ubn/ubm5/9zc3P+5ubn/ubm5/9zc
+        3P+5ubn/ubm5/9zc3P+5ubn/ubm5/9zc3P+5ubn/ubm5/9zc3P+5ubn/ubm5/9zc3P+5ubn/ubm5/9zc
+        3P+5ubn/ubm5/9zc3P+5ubn/ubm5/9zc3P//////////////////////ubm5/7m5uf+5ubn/3Nzc/7m5
+        uf+5ubn/3Nzc/7m5uf+5ubn/3Nzc/7m5uf+5ubn/3Nzc/7m5uf+5ubn/3Nzc/7m5uf+5ubn/3Nzc/7m5
+        uf+5ubn/3Nzc/7m5uf+5ubn/3Nzc/7m5uf+5ubn/3Nzc//////////////////////+5ubn/ubm5/7m5
+        uf/c3Nz/3Nzc/9zc3P/c3Nz/3Nzc/9zc3P/c3Nz/3Nzc/9zc3P/c3Nz/3Nzc/9zc3P/c3Nz/3Nzc/9zc
+        3P/c3Nz/3Nzc/9zc3P/c3Nz/3Nzc/9zc3P/Kysr/ubm5/7m5uf/c3Nz//////////////////////8HB
+        wf+5ubn/ubm5/7m5uf+5ubn/ubm5/7m5uf+5ubn/ubm5/7m5uf+5ubn/ubm5/7m5uf+5ubn/ubm5/7m5
+        uf+5ubn/ubm5/7m5uf+5ubn/ubm5/7m5uf+5ubn/ubm5/7m5uf+5ubn/ubm5/+Xl5f//////////////
+        /////////////+Pj4//R0dH/////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////9vb2/7u7u//T09P/3Nzc/9zc3P/c3Nz/3Nzc/9zc3P/c3Nz/3Nzc/9zc
+        3P/c3Nz/3Nzc/9zc3P/c3Nz/3Nzc/9zc3P/c3Nz/3Nzc/9zc3P/c3Nz/3Nzc/9zc3P/r6+v/////////
+        ////////////////////////////////////////8vLy/9/f3//c3Nz/3Nzc/9zc3P/c3Nz/3Nzc/9zc
+        3P/c3Nz/3Nzc/9zc3P/c3Nz/3Nzc/9zc3P/c3Nz/3Nzc/9zc3P/c3Nz/3Nzc/9zc3P/c3Nz/09PT/7y8
+        vP/n5+f/////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////29vb/9zc3P//////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=
+</value>
+  </data>
+  <data name="TrayIcon.Text" xml:space="preserve">
+    <value>TrayIcon</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="TrayIcon.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="SwitchKeyText.Location" type="System.Drawing.Point, System.Drawing">
+    <value>130, 12</value>
+  </data>
+  <data name="SwitchKeyText.Size" type="System.Drawing.Size, System.Drawing">
+    <value>142, 20</value>
+  </data>
+  <data name="SwitchKeyText.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;SwitchKeyText.Name" xml:space="preserve">
+    <value>SwitchKeyText</value>
+  </data>
+  <data name="&gt;&gt;SwitchKeyText.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;SwitchKeyText.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;SwitchKeyText.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 15</value>
+  </data>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>72, 13</value>
+  </data>
+  <data name="label1.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>Switch button</value>
+  </data>
+  <data name="&gt;&gt;label1.Name" xml:space="preserve">
+    <value>label1</value>
+  </data>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="ConvertKeyText.Location" type="System.Drawing.Point, System.Drawing">
+    <value>130, 39</value>
+  </data>
+  <data name="ConvertKeyText.Size" type="System.Drawing.Size, System.Drawing">
+    <value>142, 20</value>
+  </data>
+  <data name="ConvertKeyText.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;ConvertKeyText.Name" xml:space="preserve">
+    <value>ConvertKeyText</value>
+  </data>
+  <data name="&gt;&gt;ConvertKeyText.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ConvertKeyText.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;ConvertKeyText.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="SwitchRegisterText.Location" type="System.Drawing.Point, System.Drawing">
+    <value>130, 65</value>
+  </data>
+  <data name="SwitchRegisterText.Size" type="System.Drawing.Size, System.Drawing">
+    <value>142, 20</value>
+  </data>
+  <data name="SwitchRegisterText.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;SwitchRegisterText.Name" xml:space="preserve">
+    <value>SwitchRegisterText</value>
+  </data>
+  <data name="&gt;&gt;SwitchRegisterText.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;SwitchRegisterText.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;SwitchRegisterText.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="label2.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="label2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 42</value>
+  </data>
+  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>77, 13</value>
+  </data>
+  <data name="label2.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="label2.Text" xml:space="preserve">
+    <value>Convert button</value>
+  </data>
+  <data name="&gt;&gt;label2.Name" xml:space="preserve">
+    <value>label2</value>
+  </data>
+  <data name="&gt;&gt;label2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="label3.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 68</value>
+  </data>
+  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>115, 13</value>
+  </data>
+  <data name="label3.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="label3.Text" xml:space="preserve">
+    <value>Switch Register Button</value>
+  </data>
+  <data name="&gt;&gt;label3.Name" xml:space="preserve">
+    <value>label3</value>
+  </data>
+  <data name="&gt;&gt;label3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label3.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="Ok_button.Location" type="System.Drawing.Point, System.Drawing">
+    <value>116, 114</value>
+  </data>
+  <data name="Ok_button.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="Ok_button.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="Ok_button.Text" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="&gt;&gt;Ok_button.Name" xml:space="preserve">
+    <value>Ok_button</value>
+  </data>
+  <data name="&gt;&gt;Ok_button.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Ok_button.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Ok_button.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="Cancel_button.Location" type="System.Drawing.Point, System.Drawing">
+    <value>197, 114</value>
+  </data>
+  <data name="Cancel_button.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="Cancel_button.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="Cancel_button.Text" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="&gt;&gt;Cancel_button.Name" xml:space="preserve">
+    <value>Cancel_button</value>
+  </data>
+  <data name="&gt;&gt;Cancel_button.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Cancel_button.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Cancel_button.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="Startup_checkBox.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="Startup_checkBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 91</value>
+  </data>
+  <data name="Startup_checkBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>142, 17</value>
+  </data>
+  <data name="Startup_checkBox.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="Startup_checkBox.Text" xml:space="preserve">
+    <value>Start on windows startup</value>
+  </data>
+  <data name="&gt;&gt;Startup_checkBox.Name" xml:space="preserve">
+    <value>Startup_checkBox</value>
+  </data>
+  <data name="&gt;&gt;Startup_checkBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Startup_checkBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Startup_checkBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="$this.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>284, 141</value>
+  </data>
+  <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAABAAEAICAAAAEAIACoEAAAFgAAACgAAAAgAAAAQAAAAAEAIAAAAAAAABAAAAAAAAAAAAAAAAAAAAAA
+        AAD/////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        /////////////////////////////////////////////////////////////////////////////+Xl
+        5f/c3Nz/3Nzc/9zc3P/c3Nz/3Nzc/9zc3P/c3Nz/3Nzc/9zc3P/c3Nz/3Nzc/9zc3P/c3Nz/3Nzc/9zc
+        3P/c3Nz/3Nzc/9zc3P/c3Nz/3Nzc/9zc3P/c3Nz/3Nzc/9zc3P/c3Nz/3Nzc//b29v//////////////
+        ////////ubm5/7m5uf+5ubn/ubm5/7m5uf+5ubn/ubm5/7m5uf+5ubn/ubm5/7m5uf+5ubn/ubm5/7m5
+        uf+5ubn/ubm5/7m5uf+5ubn/ubm5/7m5uf+5ubn/ubm5/7m5uf+5ubn/ubm5/7m5uf+5ubn/3Nzc////
+        //////////////////+5ubn/ubm5/7m5uf/t7e3/3Nzc/9zc3P/t7e3/3Nzc/9zc3P/t7e3/3Nzc/9zc
+        3P/c3Nz/3Nzc/9zc3P/c3Nz/3Nzc/9zc3P/t7e3/3Nzc/9zc3P/t7e3/3Nzc/9zc3P/c3Nz/ubm5/7m5
+        uf/c3Nz//////////////////////7m5uf+5ubn/ubm5/9zc3P+5ubn/ubm5/9zc3P+5ubn/ubm5/9zc
+        3P+5ubn/ubm5/7m5uf+5ubn/ubm5/7m5uf+5ubn/ubm5/9zc3P+5ubn/ubm5/9zc3P+5ubn/ubm5/9zc
+        3P+5ubn/ubm5/9zc3P//////////////////////ubm5/7m5uf+5ubn/3Nzc/7m5uf+5ubn/3Nzc/7m5
+        uf+5ubn/3Nzc/7m5uf+5ubn/ubm5/7m5uf+5ubn/ubm5/7m5uf+5ubn/3Nzc/7m5uf+5ubn/3Nzc/7m5
+        uf+5ubn/3Nzc/7m5uf+5ubn/3Nzc//////////////////////+5ubn/ubm5/7m5uf/t7e3/3Nzc/9zc
+        3P/c3Nz/7e3t/9zc3P/c3Nz/7e3t/9zc3P/c3Nz/7e3t/9zc3P/c3Nz/7e3t/9zc3P/c3Nz/7e3t/9zc
+        3P/c3Nz/3Nzc/9zc3P/c3Nz/ubm5/7m5uf/c3Nz//////////////////////7m5uf+5ubn/ubm5/9zc
+        3P+5ubn/ubm5/7m5uf/c3Nz/ubm5/7m5uf/c3Nz/ubm5/7m5uf/c3Nz/ubm5/7m5uf/c3Nz/ubm5/7m5
+        uf/c3Nz/ubm5/7m5uf+5ubn/ubm5/9zc3P+5ubn/ubm5/9zc3P//////////////////////ubm5/7m5
+        uf+5ubn/3Nzc/7m5uf+5ubn/ubm5/9zc3P+5ubn/ubm5/9zc3P+5ubn/ubm5/9zc3P+5ubn/ubm5/9zc
+        3P+5ubn/ubm5/9zc3P+5ubn/ubm5/7m5uf+5ubn/3Nzc/7m5uf+5ubn/3Nzc////////////////////
+        //+5ubn/ubm5/7m5uf/t7e3/3Nzc/9zc3P/c3Nz/3Nzc/+3t7f/c3Nz/3Nzc/+3t7f/c3Nz/3Nzc/+3t
+        7f/c3Nz/3Nzc/+3t7f/c3Nz/3Nzc/+3t7f/c3Nz/3Nzc/9zc3P/c3Nz/ubm5/7m5uf/c3Nz/////////
+        /////////////7m5uf+5ubn/ubm5/9zc3P+5ubn/ubm5/7m5uf+5ubn/3Nzc/7m5uf+5ubn/3Nzc/7m5
+        uf+5ubn/3Nzc/7m5uf+5ubn/3Nzc/7m5uf+5ubn/3Nzc/7m5uf+5ubn/ubm5/9zc3P+5ubn/ubm5/9zc
+        3P//////////////////////ubm5/7m5uf+5ubn/3Nzc/7m5uf+5ubn/ubm5/7m5uf/c3Nz/ubm5/7m5
+        uf/c3Nz/ubm5/7m5uf/c3Nz/ubm5/7m5uf/c3Nz/ubm5/7m5uf/c3Nz/ubm5/7m5uf+5ubn/3Nzc/7m5
+        uf+5ubn/3Nzc//////////////////////+5ubn/ubm5/7m5uf/t7e3/3Nzc/9zc3P/t7e3/3Nzc/9zc
+        3P/t7e3/3Nzc/9zc3P/t7e3/3Nzc/9zc3P/t7e3/3Nzc/9zc3P/t7e3/3Nzc/9zc3P/t7e3/3Nzc/9zc
+        3P/c3Nz/ubm5/7m5uf/c3Nz//////////////////////7m5uf+5ubn/ubm5/9zc3P+5ubn/ubm5/9zc
+        3P+5ubn/ubm5/9zc3P+5ubn/ubm5/9zc3P+5ubn/ubm5/9zc3P+5ubn/ubm5/9zc3P+5ubn/ubm5/9zc
+        3P+5ubn/ubm5/9zc3P+5ubn/ubm5/9zc3P//////////////////////ubm5/7m5uf+5ubn/3Nzc/7m5
+        uf+5ubn/3Nzc/7m5uf+5ubn/3Nzc/7m5uf+5ubn/3Nzc/7m5uf+5ubn/3Nzc/7m5uf+5ubn/3Nzc/7m5
+        uf+5ubn/3Nzc/7m5uf+5ubn/3Nzc/7m5uf+5ubn/3Nzc//////////////////////+5ubn/ubm5/7m5
+        uf/c3Nz/3Nzc/9zc3P/c3Nz/3Nzc/9zc3P/c3Nz/3Nzc/9zc3P/c3Nz/3Nzc/9zc3P/c3Nz/3Nzc/9zc
+        3P/c3Nz/3Nzc/9zc3P/c3Nz/3Nzc/9zc3P/Kysr/ubm5/7m5uf/c3Nz//////////////////////8HB
+        wf+5ubn/ubm5/7m5uf+5ubn/ubm5/7m5uf+5ubn/ubm5/7m5uf+5ubn/ubm5/7m5uf+5ubn/ubm5/7m5
+        uf+5ubn/ubm5/7m5uf+5ubn/ubm5/7m5uf+5ubn/ubm5/7m5uf+5ubn/ubm5/+Xl5f//////////////
+        /////////////+Pj4//R0dH/////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////9vb2/7u7u//T09P/3Nzc/9zc3P/c3Nz/3Nzc/9zc3P/c3Nz/3Nzc/9zc
+        3P/c3Nz/3Nzc/9zc3P/c3Nz/3Nzc/9zc3P/c3Nz/3Nzc/9zc3P/c3Nz/3Nzc/9zc3P/r6+v/////////
+        ////////////////////////////////////////8vLy/9/f3//c3Nz/3Nzc/9zc3P/c3Nz/3Nzc/9zc
+        3P/c3Nz/3Nzc/9zc3P/c3Nz/3Nzc/9zc3P/c3Nz/3Nzc/9zc3P/c3Nz/3Nzc/9zc3P/c3Nz/09PT/7y8
+        vP/n5+f/////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////29vb/9zc3P//////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=
+</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>Manual</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Ligth Keyoard Layout Switcher</value>
+  </data>
+  <data name="&gt;&gt;TrayIcon.Name" xml:space="preserve">
+    <value>TrayIcon</value>
+  </data>
+  <data name="&gt;&gt;TrayIcon.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NotifyIcon, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>LightLayoutSwitcherForm</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+</root>
