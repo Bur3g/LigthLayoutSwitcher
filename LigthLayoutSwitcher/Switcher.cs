@@ -132,23 +132,32 @@ namespace LigthLayoutSwitcher
             if (string.IsNullOrEmpty(text)) return;
 
             var convertedText = "";
-            foreach (var c in text)
+            if (!LowLevelApiUtilites.IsCapsLockOn())
             {
-                if (!char.IsUpper(c))
+                foreach (var c in text)
                 {
-                    convertedText += char.ToUpper(c);
-                }
-                else
-                {
-                    convertedText += char.ToLower(c);
+                    if (!char.IsUpper(c))
+                    {
+                        convertedText += char.ToUpper(c);
+                    }
+                    else
+                    {
+                        convertedText += char.ToLower(c);
+                    }
                 }
             }
+            else
+            {
+                convertedText = text;
+            }
+
             Console.WriteLine(convertedText);
 
             LowLevelApiUtilites.SendKeyPress(Keys.Delete);
+            //bool isCapsLockOn = !LowLevelApiUtilites.IsCapsLockOn();
             foreach (var key in LowLevelApiUtilites.StringToKeys(convertedText))
             {
-                LowLevelApiUtilites.SendKeyPress(key, (key & Keys.Shift) != Keys.None);
+                LowLevelApiUtilites.SendKeyPress(key, ((key & Keys.Shift) != Keys.None) );
             }
         }
 

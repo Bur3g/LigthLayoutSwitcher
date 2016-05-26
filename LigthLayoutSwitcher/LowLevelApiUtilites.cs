@@ -190,7 +190,12 @@ namespace LigthLayoutSwitcher
 
             return ret;
         }
-        
+
+        public static bool IsCapsLockOn()
+        {
+            return (((ushort)GetKeyState(0x14)) & 0xffff) != 0;
+        }
+
         /*
          
         // Gets ALL text from focused textbox, but we need only selected part  
