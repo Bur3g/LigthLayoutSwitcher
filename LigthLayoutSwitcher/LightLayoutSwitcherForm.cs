@@ -1,13 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Xml;
 using Gma.UserActivityMonitor;
 
 namespace LigthLayoutSwitcher
@@ -16,7 +9,7 @@ namespace LigthLayoutSwitcher
     {
         private Settings settings;
         private Switcher switcher;
-        private bool keyboardHookedByForm = false;
+        private bool keyboardHookedByForm;
 
         public LightLayoutSwitcherForm(Settings settings, Switcher switcher)
         {
@@ -32,16 +25,16 @@ namespace LigthLayoutSwitcher
 
         private void ReadSettings()
         {
+            // Read serialized settings
             SwitchKeyText.Text = settings.SwitchKey.ToString();
             ConvertKeyText.Text = settings.ConvertKey.ToString();
             SwitchRegisterText.Text = settings.ChangeRegisterKey.ToString();
             Startup_checkBox.Checked = settings.AutoRun;
         }
 
-
         private void SetFormPosition()
         {
-            // Seeting up position of form
+            // Seeting up position of form in right corner
             Screen rightmost = Screen.AllScreens[0];
             foreach (Screen screen in Screen.AllScreens)
             {
@@ -50,36 +43,9 @@ namespace LigthLayoutSwitcher
                     rightmost = screen;
                 }
             }
-            this.Location = new Point(rightmost.WorkingArea.Right - this.Width,
-                rightmost.WorkingArea.Bottom - this.Height);
+            Location = new Point(rightmost.WorkingArea.Right - Width, rightmost.WorkingArea.Bottom - Height);
         }
 
-        private void TrayIcon_MouseDoubleClick(object sender, MouseEventArgs e)
-        {
-            if (WindowState == FormWindowState.Minimized)
-            {
-                ShowForm();
-            }
-            else
-            {
-                WindowState = FormWindowState.Minimized;
-                HideForm();
-            }
-        }
-        private void TrayIcon_MouseClick(object sender, MouseEventArgs e)
-        {
-            if (WindowState != FormWindowState.Minimized)
-            {
-                this.Activate();
-            }
-        }
-        private void LightLayoutSwitcherForm_Resize(object sender, EventArgs e)
-        {
-            if (WindowState == FormWindowState.Minimized)
-            {
-                HideForm();
-            }
-        }
         private void LightLayoutSwitcherForm_Activated(object sender, EventArgs e)
         {
             HookKeyboard();
@@ -92,14 +58,14 @@ namespace LigthLayoutSwitcher
 
         private void ShowForm()
         {
-            this.Show();
+            Show();
             WindowState = FormWindowState.Normal;
             HookKeyboard();
         }
 
         private void HideForm()
         {
-            this.Hide();
+            Hide();
             TrayIcon.Visible = true;
             FreeKeyboard();
         }
@@ -134,6 +100,7 @@ namespace LigthLayoutSwitcher
 
         private void SetTextBoxActions()
         {
+            // text boxes events
             SwitchKeyText.Enter += (sender, args) => _currenKeyType = KeyType.Switch;
             SwitchKeyText.Leave += (sender, args) => UpdateSettings();
             ConvertKeyText.Enter += (sender, args) => _currenKeyType = KeyType.Convert;
@@ -144,14 +111,19 @@ namespace LigthLayoutSwitcher
 
         private void SetKey(object sender, KeyEventArgs e)
         {
+            // Keyboard hook event behaviour
+
             KeyInfo keyInfo = new KeyInfo(e.KeyData);
             var vk = e.KeyCode;
+
+            // cancel unsaved changes
             if (vk == Keys.Escape)
             {
                 e.Handled = true;
                 ResetCurrentHotkey();
                 return;
             }
+
 
             if (vk != Keys.LMenu && vk != Keys.RMenu
                 && vk != Keys.LWin && vk != Keys.RWin
@@ -224,7 +196,51 @@ namespace LigthLayoutSwitcher
             settings.ReloadSettings();
             ReadSettings();
         }
+        private void openToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (WindowState == FormWindowState.Minimized)
+                ShowForm();
+        }
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
 
+            Close();
+        }
+        private void TrayIcon_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+            // Tray icon double click behavior
+            if (WindowState == FormWindowState.Minimized)
+            {
+                ShowForm();
+            }
+            else
+            {
+                WindowState = FormWindowState.Minimized;
+                HideForm();
+            }
+        }
+        private void TrayIcon_MouseClick(object sender, MouseEventArgs e)
+        {
+            if (WindowState != FormWindowState.Minimized)
+            {
+                Activate();
+            }
+        }
+        private void LightLayoutSwitcherForm_Resize(object sender, EventArgs e)
+        {
+            if (WindowState == FormWindowState.Minimized)
+            {
+                HideForm();
+            }
+        }
 
+        private void LightLayoutSwitcherForm_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (e.CloseReason == CloseReason.UserClosing)
+            {
+                WindowState = FormWindowState.Minimized;
+                e.Cancel = true;
+            }
+        }
     }
 }

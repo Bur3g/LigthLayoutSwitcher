@@ -344,7 +344,6 @@ namespace Gma.UserActivityMonitor
                     keyData |= altPressed ? Keys.Alt : 0;
                     keyData |= contrlolPressed ? Keys.Control : 0;
 
-                    Console.WriteLine(keyData);
                     KeyEventArgs e = new KeyEventArgs(keyData);
                     s_KeyDown.Invoke(null, e);
                     handled = e.Handled;

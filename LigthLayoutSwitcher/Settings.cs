@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Configuration;
+using System.IO;
 using System.Linq;
 using System.Reflection;
 using System.Reflection.Emit;
@@ -8,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using IWshRuntimeLibrary;
+using File = System.IO.File;
 
 namespace LigthLayoutSwitcher
 {
@@ -16,10 +18,12 @@ namespace LigthLayoutSwitcher
     {
         public static Settings Init()
         {
+            // Settings Initialization
             Settings settings = new Settings();
+
             settings.Reload();
 
-
+            // Setting default keys
             if (settings.SwitchKey == null)
             {
                 settings.SwitchKey = new KeyInfo(Keys.Pause);
@@ -40,43 +44,48 @@ namespace LigthLayoutSwitcher
         [UserScopedSetting]
         [SettingsSerializeAs(SettingsSerializeAs.Binary)]
         [DefaultSettingValue("")]
+        // HotKey that switches last word
         public KeyInfo SwitchKey
         {
             get { return (KeyInfo) this["SwitchKey"]; }
-            set { this["SwitchKey"] = (KeyInfo) value; }
+            set { this["SwitchKey"] = value; }
         }
 
         [UserScopedSetting]
         [SettingsSerializeAs(SettingsSerializeAs.Binary)]
         [DefaultSettingValue("")]
+        // HotKey that switches last selected text
         public KeyInfo ConvertKey
         {
             get { return (KeyInfo) this["ConvertKey"]; }
-            set { this["ConvertKey"] = (KeyInfo) value; }
+            set { this["ConvertKey"] = value; }
         }
 
         [UserScopedSetting]
         [SettingsSerializeAs(SettingsSerializeAs.Binary)]
         [DefaultSettingValue("")]
+        // HotKey that switches register
         public KeyInfo ChangeRegisterKey
         {
             get { return (KeyInfo) this["ChangeRegisterKey"]; }
-            set { this["ChangeRegisterKey"] = (KeyInfo) value; }
+            set { this["ChangeRegisterKey"] = value; }
         }
 
         [UserScopedSetting]
         [SettingsSerializeAs(SettingsSerializeAs.Binary)]
         [DefaultSettingValue("")]
+        // Autorun option
         public bool AutoRun
         {
             get { return (bool) this["AutoRun"]; }
-            set { this["AutoRun"] = (bool) value; }
+            set { this["AutoRun"] = value; }
         }
 
         internal void SaveSettings()
         {
             Save();
 
+            // Need to create or delete shortcut in system startup folder
             if (AutoRun)
             {
                 CreateAutorunShortcut();
@@ -87,28 +96,30 @@ namespace LigthLayoutSwitcher
             }
         }
 
-        private static string GetAutorunPath()
+        private static string GetStartUpFolderPath()
         {
-            return System.IO.Path.Combine(
+            return Path.Combine(
                 Environment.GetFolderPath(Environment.SpecialFolder.Startup),
                 "LightLayoutSwitcher.lnk");
         }
+
         public static void CreateAutorunShortcut()
         {
-            var shortcutLocation = GetAutorunPath();
-            if (System.IO.File.Exists(shortcutLocation))
+            var shortcutLocation = GetStartUpFolderPath();
+            if (File.Exists(shortcutLocation))
             {
                 return;
             }
-            WshShell shell = new WshShell();
-            IWshShortcut shortcut = (IWshShortcut)shell.CreateShortcut(shortcutLocation);
-            shortcut.Description = "Light Layout Switcher";
+            var shell = new WshShell();
+            var shortcut = (IWshShortcut) shell.CreateShortcut(shortcutLocation);
+            shortcut.Description = "Light Layout Keyboard Switcher";
             shortcut.TargetPath = Assembly.GetExecutingAssembly().Location;
             shortcut.Save();
         }
+
         public static void DeleteAutorunShortcut()
         {
-            System.IO.File.Delete(GetAutorunPath());
+            File.Delete(GetStartUpFolderPath());
         }
 
         internal void ReloadSettings()
